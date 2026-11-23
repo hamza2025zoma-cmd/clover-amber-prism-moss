@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="purple" data-fx="clouds">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#2e1065">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>بنك تيته امال الدولي</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--g:var(--card);--gb:var(--sep);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+/* ===== الستايلات ===== */
+html[data-theme=aurora]{color-scheme:dark;--bg:#0b1020;--grad:radial-gradient(60% 40% at 15% 8%,rgba(52,211,153,.55),transparent 70%),radial-gradient(55% 40% at 88% 28%,rgba(168,85,247,.55),transparent 70%),radial-gradient(70% 45% at 50% 100%,rgba(59,130,246,.5),transparent 70%);--card:rgba(255,255,255,.12);--cardb:rgba(255,255,255,.22);--blur:28px;--r:26px;--shadow:0 10px 30px rgba(0,0,0,.25);--fill:rgba(255,255,255,.12);--t:#fff;--t2:rgba(255,255,255,.7);--sep:rgba(255,255,255,.2);--tint:#a7f3d0;--tint-bg:rgba(255,255,255,.16);--main-bg:linear-gradient(135deg,#34d399,#6366f1);--main-t:#fff;--ok:#6ee7b7;--no:#fda4af;--no-bg:rgba(255,255,255,.14)}
+html[data-theme=ocean]{color-scheme:dark;--bg:#03045e;--grad:linear-gradient(180deg,#03045e 0%,#0077b6 55%,#90e0ef 100%);--card:rgba(255,255,255,.16);--cardb:rgba(255,255,255,.3);--blur:28px;--r:26px;--shadow:0 10px 30px rgba(0,30,80,.3);--fill:rgba(255,255,255,.16);--t:#fff;--t2:rgba(255,255,255,.75);--sep:rgba(255,255,255,.25);--tint:#caf0f8;--tint-bg:rgba(255,255,255,.2);--main-bg:linear-gradient(135deg,#00b4d8,#0096c7);--main-t:#fff;--ok:#b7ffd8;--no:#ffb3c1;--no-bg:rgba(255,255,255,.16)}
+html[data-theme=candy]{color-scheme:light;--bg:#fff1f6;--grad:radial-gradient(50% 35% at 15% 10%,rgba(255,120,170,.55),transparent 70%),radial-gradient(50% 35% at 90% 50%,rgba(255,190,90,.5),transparent 70%),radial-gradient(60% 40% at 30% 100%,rgba(90,220,170,.5),transparent 70%);--card:rgba(255,255,255,.45);--cardb:rgba(255,255,255,.95);--blur:28px;--r:26px;--shadow:0 8px 24px rgba(236,72,153,.14);--fill:rgba(255,235,243,.9);--t:#3b2a4a;--t2:#8a7a99;--sep:rgba(60,30,80,.1);--tint:#db2777;--tint-bg:rgba(236,72,153,.12);--main-bg:linear-gradient(135deg,#f472b6,#fb923c);--main-t:#fff;--ok:#16a34a;--no:#e11d48;--no-bg:rgba(225,29,72,.1)}
+html[data-theme=space]{color-scheme:dark;--bg:#05010f;--grad:radial-gradient(70% 40% at 20% 5%,rgba(124,58,237,.6),transparent 70%),radial-gradient(60% 40% at 90% 60%,rgba(37,99,235,.45),transparent 70%),radial-gradient(60% 35% at 40% 100%,rgba(190,24,93,.35),transparent 70%);--card:rgba(40,25,90,.38);--cardb:rgba(190,170,255,.35);--blur:28px;--r:26px;--shadow:0 0 24px rgba(139,92,246,.18);--fill:rgba(255,255,255,.08);--t:#f5f3ff;--t2:#a99fd1;--sep:rgba(167,139,250,.2);--tint:#c4b5fd;--tint-bg:rgba(139,92,246,.2);--main-bg:linear-gradient(135deg,#8b5cf6,#6366f1);--main-t:#fff;--ok:#6ee7b7;--no:#fb7185;--no-bg:rgba(251,113,133,.16)}
+html[data-theme=gold]{color-scheme:dark;--bg:#0b0b0b;--grad:radial-gradient(55% 35% at 15% 8%,rgba(245,200,80,.55),transparent 70%),radial-gradient(50% 35% at 90% 45%,rgba(180,110,20,.5),transparent 70%),radial-gradient(60% 40% at 30% 100%,rgba(120,70,10,.55),transparent 70%);--card:rgba(40,32,12,.4);--cardb:rgba(255,215,120,.35);--blur:28px;--r:26px;--shadow:0 6px 22px rgba(0,0,0,.5);--fill:#211e17;--t:#f3ead2;--t2:#a39770;--sep:rgba(212,175,55,.18);--tint:#e6c15a;--tint-bg:rgba(212,175,55,.15);--main-bg:linear-gradient(135deg,#f5d77a,#b8860b);--main-t:#1a1200;--ok:#86efac;--no:#ff8a8a;--no-bg:rgba(255,138,138,.14)}
+html[data-theme=sky]{color-scheme:light;--bg:#bae6fd;--grad:linear-gradient(180deg,#7dd3fc 0%,#bae6fd 50%,#f0f9ff 100%);--card:rgba(255,255,255,.4);--cardb:rgba(255,255,255,.9);--blur:28px;--r:26px;--shadow:0 8px 24px rgba(2,100,160,.15);--fill:rgba(224,242,254,.9);--t:#0c2d48;--t2:#4b7391;--sep:rgba(12,45,72,.1);--tint:#0369a1;--tint-bg:rgba(2,132,199,.12);--main-bg:linear-gradient(135deg,#38bdf8,#0284c7);--main-t:#fff;--ok:#15803d;--no:#dc2626;--no-bg:rgba(220,38,38,.1)}
+html[data-theme=neon]{color-scheme:dark;--bg:#07060f;--grad:radial-gradient(60% 40% at 12% 0%,rgba(255,0,200,.35),transparent 70%),radial-gradient(60% 40% at 90% 100%,rgba(0,229,255,.3),transparent 70%);--card:rgba(30,12,60,.4);--cardb:rgba(120,240,255,.4);--blur:28px;--r:26px;--shadow:0 0 18px rgba(0,229,255,.18);--fill:rgba(255,255,255,.07);--t:#fff;--t2:#a5a0c8;--sep:rgba(0,229,255,.2);--tint:#00e5ff;--tint-bg:rgba(0,229,255,.12);--main-bg:linear-gradient(135deg,#ff00c8,#00b8ff);--main-t:#fff;--ok:#39ff88;--no:#ff4d8d;--no-bg:rgba(255,77,141,.16)}
+html[data-theme=sunset]{color-scheme:dark;--bg:#4a1942;--grad:linear-gradient(160deg,#4a1942 0%,#c2410c 60%,#fbbf24 100%);--card:rgba(255,255,255,.15);--cardb:rgba(255,255,255,.3);--blur:28px;--r:26px;--shadow:0 10px 30px rgba(60,10,30,.25);--fill:rgba(255,255,255,.15);--t:#fff;--t2:rgba(255,255,255,.75);--sep:rgba(255,255,255,.25);--tint:#fff;--tint-bg:rgba(255,255,255,.2);--main-bg:linear-gradient(135deg,#fb923c,#ec4899);--main-t:#fff;--ok:#bbf7d0;--no:#fecdd3;--no-bg:rgba(255,255,255,.16)}
+html[data-theme=purple]{color-scheme:dark;--bg:#2e1065;--grad:linear-gradient(180deg,#2e1065 0%,#5b21b6 45%,#a78bfa 100%);--card:rgba(255,255,255,.16);--cardb:rgba(255,255,255,.3);--blur:28px;--r:26px;--shadow:0 10px 30px rgba(20,0,60,.3);--fill:rgba(255,255,255,.14);--t:#fff;--t2:rgba(255,255,255,.72);--sep:rgba(255,255,255,.22);--tint:#fff;--tint-bg:rgba(255,255,255,.22);--main-bg:rgba(255,255,255,.38);--main-t:#fff;--ok:#7dffb2;--no:#ff8a9b;--no-bg:rgba(255,255,255,.18)}
+html[data-theme=classic]{color-scheme:dark;--bg:#1b1464;--grad:linear-gradient(135deg,#1b1464,#0b6e8a);--card:rgba(255,255,255,.14);--cardb:rgba(255,255,255,.35);--blur:28px;--r:26px;--shadow:0 10px 30px rgba(0,0,0,.2);--fill:rgba(255,255,255,.12);--t:#fff;--t2:rgba(255,255,255,.7);--sep:rgba(255,255,255,.18);--tint:#fff;--tint-bg:rgba(255,255,255,.22);--main-bg:linear-gradient(135deg,rgba(255,255,255,.4),rgba(255,255,255,.15));--main-t:#fff;--ok:#7dffb2;--no:#ff8a9b;--no-bg:rgba(255,255,255,.16)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{height:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%;background:var(--bg)}
+body{margin:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Arabic","Cairo",system-ui,sans-serif;color:var(--t);background:var(--bg);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:var(--grad)}
+main{position:relative;z-index:1;max-width:560px;margin:0 auto;padding:14px 16px 40px}
+.glass{position:relative;background:var(--card);border:1px solid var(--cardb,rgba(255,255,255,.3));border-radius:var(--r,26px);padding:16px;margin-bottom:16px;backdrop-filter:blur(var(--blur,28px)) saturate(190%) brightness(1.05);-webkit-backdrop-filter:blur(var(--blur,28px)) saturate(190%) brightness(1.05);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.55),inset 0 -1px 0 rgba(255,255,255,.12),inset 0 0 24px rgba(255,255,255,.07),var(--shadow,0 14px 40px rgba(0,0,0,.22))}
+.glass::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.3) 0%,rgba(255,255,255,0) 38%,rgba(255,255,255,0) 68%,rgba(255,255,255,.14) 100%)}
+h1{margin:10px 0 2px;font-size:32px;font-weight:800;letter-spacing:-.3px;text-align:start}
+.sub{text-align:start;color:var(--t2);margin:0 0 12px;font-size:15px}
+h2{margin:0 0 10px;font-size:20px;font-weight:700}
+input,select{width:100%;padding:12px 14px;margin:5px 0;border-radius:12px;border:1px solid var(--sep);background:var(--fill);color:var(--t);font:inherit;font-size:16px;outline:none;box-shadow:inset 0 1px 4px rgba(0,0,0,.16);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+input:focus{border-color:var(--tint);box-shadow:0 0 0 2px var(--tint-bg)}
+input::placeholder{color:var(--t2)}
+button{font:inherit;font-weight:600;font-size:15px;color:var(--tint);padding:10px 16px;border-radius:14px;border:1px solid rgba(255,255,255,.3);background:var(--tint-bg);cursor:pointer;backdrop-filter:blur(12px) saturate(180%);-webkit-backdrop-filter:blur(12px) saturate(180%);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 3px 10px rgba(0,0,0,.12)}
+button:active{opacity:.55;transform:scale(.98)}
+.main{width:100%;margin-top:8px;padding:14px;font-size:17px;border-radius:16px;background:var(--main-bg);color:var(--main-t);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.6),inset 0 -10px 18px rgba(255,255,255,.1),0 8px 22px rgba(0,0,0,.2)}
+button.danger,.danger{color:var(--no)}
+button.danger{background:var(--no-bg)}
+#sw{display:inline-block;margin:0 0 14px;width:auto;padding:6px 12px;font-size:12px;border-radius:999px}
+.bal{font-size:44px;font-weight:800;text-align:center;margin:6px 0;letter-spacing:-.5px}
+.row{display:flex;gap:8px;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:.5px solid var(--sep)}
+.row:last-child{border:0}
+.sm{font-size:13px;color:var(--t2)}
+.acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}
+.acts button{padding:7px 12px;font-size:13px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.msg{text-align:center;margin:8px 0;min-height:22px;font-size:14px}
+.in{color:var(--ok)}.out{color:var(--no)}
+/* مؤثرات الخلفية */
+.cloud,.stars,.bub,.orb{display:none;position:fixed;z-index:0;pointer-events:none}
+html[data-fx=orbs] .orb{display:block}
+.orb{border-radius:50%;background:radial-gradient(circle,var(--c) 0%,transparent 70%);opacity:.75}
+.o1{--c:#ff5fa2;width:420px;height:420px;top:-80px;right:-60px}
+.o2{--c:#ffb84d;width:460px;height:460px;bottom:-120px;left:-80px}
+.o3{--c:#5f8bff;width:340px;height:340px;top:45%;left:30%}
+html[data-fx=clouds] .cloud{display:block}
+html[data-fx=stars] .stars{display:block}
+html[data-fx=bubbles] .bub{display:block}
+.cloud{left:0;width:200px;height:56px;background:rgba(255,255,255,.28);border-radius:60px;transform:translateX(-300px) scale(var(--s,1));animation:drift var(--d,60s) linear infinite;animation-delay:var(--l,0s)}
+html[data-theme=sky] .cloud{background:rgba(255,255,255,.92)}
+.cloud::before,.cloud::after{content:"";position:absolute;background:inherit;border-radius:50%}
+.cloud::before{width:90px;height:90px;top:-44px;left:28px}
+.cloud::after{width:70px;height:70px;top:-30px;left:96px}
+.c1{top:8%;--s:1.3;--d:80s;--l:-20s}
+.c2{top:30%;--s:.8;--d:55s;--l:-45s}
+.c3{top:58%;--s:1.6;--d:100s;--l:-60s}
+.c4{top:80%;--s:1;--d:70s;--l:-5s}
+@keyframes drift{from{transform:translateX(-320px) scale(var(--s,1))}to{transform:translateX(calc(100vw + 120px)) scale(var(--s,1))}}
+.stars{inset:0;background-image:radial-gradient(1.6px 1.6px at 12% 18%,#fff,transparent),radial-gradient(1.2px 1.2px at 33% 62%,#e9d5ff,transparent),radial-gradient(1.8px 1.8px at 55% 30%,#fff,transparent),radial-gradient(1.2px 1.2px at 74% 78%,#c7d2fe,transparent),radial-gradient(1.5px 1.5px at 88% 12%,#fff,transparent),radial-gradient(1.2px 1.2px at 22% 90%,#fff,transparent),radial-gradient(1.4px 1.4px at 64% 52%,#fde68a,transparent);background-size:280px 280px;animation:tw 4s ease-in-out infinite alternate}
+@keyframes tw{from{opacity:.45}to{opacity:1}}
+.bub{bottom:-80px;border-radius:50%;border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.1);animation:rise var(--d,16s) linear infinite;animation-delay:var(--l,0s)}
+.b1{left:8%;width:26px;height:26px;--d:14s}
+.b2{left:24%;width:44px;height:44px;--d:20s;--l:-6s}
+.b3{left:46%;width:18px;height:18px;--d:12s;--l:-3s}
+.b4{left:63%;width:36px;height:36px;--d:18s;--l:-10s}
+.b5{left:80%;width:22px;height:22px;--d:15s;--l:-8s}
+.b6{left:92%;width:52px;height:52px;--d:24s;--l:-14s}
+@keyframes rise{from{transform:translateY(0)}to{transform:translateY(-120vh)}}
+@media (prefers-reduced-motion:reduce){.cloud,.stars,.bub{animation:none}.cloud{transform:translateX(15vw) scale(var(--s,1))}}
+</style>
+<script>
+const THEMES=[["purple","Purple Clouds","clouds","#2e1065"],["classic","Classic","orbs","#1b1464"],["aurora","Aurora","none","#0b1020"],["ocean","Ocean","bubbles","#03045e"],["candy","Candy","none","#ffd6e5"],["space","Space","stars","#05010f"],["gold","Black Gold","none","#0b0b0b"],["sky","Cotton Sky","clouds","#7dd3fc"],["neon","Neon","none","#07060f"],["sunset","Sunset","clouds","#4a1942"]];
+function applyTheme(k){
+  let i=THEMES.findIndex(t=>t[0]===k);if(i<0)i=0;
+  const t=THEMES[i],h=document.documentElement;
+  h.setAttribute("data-theme",t[0]);h.setAttribute("data-fx",t[2]);
+  const m=document.querySelector('meta[name=theme-color]');if(m)m.setAttribute("content",t[3]);
+  
+  return i;
+}
+let themeKey="purple";try{themeKey=localStorage.getItem("bank_theme")||"purple"}catch(e){}
+applyTheme(themeKey);
+</script>
+</head>
+<body>
+
+<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div><div class="stars"></div><div class="bub b1"></div><div class="bub b2"></div><div class="bub b3"></div><div class="bub b4"></div><div class="bub b5"></div><div class="bub b6"></div>
+<div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div><div class="cloud c4"></div>
+<main>
+<h1 id="ttl" style="user-select:none">🏦 بنك تيته امال الدولي</h1>
+<div class="sub">بنك العيلة · الحد الأقصى 10 حسابات</div>
+<button id="sw" type="button" title="Switching Style">🎨 Switching Style</button>
+<div id="app"><div class="glass msg">جاري التحميل...</div></div>
+</main>
+<script>
+(function(){
+  const b=document.getElementById("sw");
+  applyTheme(themeKey);
+  b.addEventListener("click",()=>{
+    const cur=THEMES.findIndex(t=>t[0]===document.documentElement.getAttribute("data-theme"));
+    const nx=THEMES[(cur+1)%THEMES.length][0];
+    applyTheme(nx);try{localStorage.setItem("bank_theme",nx)}catch(e){}
+  });
+})();
+</script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+const ADMIN_NAME="Bank accawnt",ADMIN_PASS="Bank@1628",BANK_ID="__bank",MAX=10;
+const S={accs:[],tx:[],me:null,admin:false,msg:"",ok:true,ready:false,sel:"",bank:false,pins:false,showAdmin:location.hash==="#admin"};
+let taps=0,tapT=null;
+let db=null;
+try{S.me=sessionStorage.getItem("bk_me")||null;S.admin=sessionStorage.getItem("bk_admin")==="1"}catch(e){}
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt=n=>Number(n||0).toLocaleString("en-US");
+const save=()=>{try{S.me?sessionStorage.setItem("bk_me",S.me):sessionStorage.removeItem("bk_me");sessionStorage.setItem("bk_admin",S.admin?"1":"0")}catch(e){}};
+const say=(m,ok=true)=>{S.msg=m;S.ok=ok;render()};
+const byId=id=>S.accs.find(a=>a.id===id);
+const byName=n=>S.accs.find(a=>a.name.trim().toLowerCase()===n.trim().toLowerCase());
+const val=id=>($("#"+id)||{}).value||"";
+
+function render(){
+  if(!S.ready)return;
+  if(document.activeElement&&document.activeElement.tagName==="INPUT"){return}
+  const m=`<div class="msg" style="color:${S.ok?'var(--ok)':'var(--no)'}">${esc(S.msg)}</div>`;
+  const me=S.me?byId(S.me):null;
+  if(S.me&&!me){S.me=null;S.admin=false;save()}
+  let h="";
+  if(me)h=userView(me,m);
+  else if(S.admin)h=bankView(m);
+  else h=loginView(m);
+  $("#app").innerHTML=h;
+}
+function loginFields(){
+  if(S.sel===BANK_ID)return `<input id="lg-pin" type="password" placeholder="ادخل كلمة السر" autocapitalize="off" autocorrect="off" spellcheck="false">`;
+  const x=byId(S.sel);if(!x)return "";
+  if(x.pin)return `<input id="lg-pin" type="password" placeholder="ادخل كلمة السر" autocapitalize="off" autocorrect="off" spellcheck="false">`;
+  return `<div class="sm">أول مرة؟ اعمل كلمة سر لحسابك</div><input id="lg-pin" type="password" placeholder="كلمة السر الجديدة"><input id="lg-pin2" type="password" placeholder="أكّد كلمة السر">`;
+}
+function loginView(m){
+  const opts=S.accs.map(a=>`<option value="${a.id}"${S.sel===a.id?" selected":""}>${esc(a.name)}</option>`).join("");
+  return `<div class="glass"><h2>دخول حساب</h2>
+  <select id="lg-acc"><option value="">اختار اسمك</option>${opts}<option value="${BANK_ID}"${S.sel===BANK_ID?" selected":""}>🏦 ${ADMIN_NAME}</option></select>
+  ${loginFields()}
+  <button class="main" data-act="login">دخول</button></div>
+  ${m}`;
+}
+function txList(filterId){
+  const l=S.tx.filter(t=>!filterId||t.fromId===filterId||t.toId===filterId).slice(0,12);
+  if(!l.length)return `<div class="sm">مفيش عمليات لسه</div>`;
+  return l.map(t=>{
+    const inn=filterId&&t.toId===filterId;
+    const title=filterId?(inn?`وصلك تحويل من ${t.from}`:`حوّلت إلى ${t.to}`):`${t.from} حوّل إلى ${t.to}`;
+    const reason=t.note?`السبب: ${t.note}`:"";
+    const when=t.t?new Date(t.t).toLocaleString("ar-EG"):"";
+    return `<div class="row"><div><b>${esc(title)}</b><div class="sm">${reason?esc(reason):""}</div><div class="sm">${esc(when)}</div></div><b class="${filterId?(inn?'in':'out'):''}">${filterId?(inn?'+':'−'):''}${fmt(t.amt)} جنيه</b></div>`}).join("");
+}
+
+function userView(me,m){
+  const others=S.accs.filter(a=>a.id!==me.id).map(a=>`<option>${esc(a.name)}</option>`).join("");
+  return `<div class="glass"><div class="top"><b>أهلاً ${esc(me.name)} 👋</b><button data-act="logout">خروج</button></div>
+  <div class="sm" style="text-align:center">رصيدك</div><div class="bal" ${me.balance<0?'style="color:var(--no)"':""}>${fmt(me.balance)} ${me.balance<0?"⚠️":"💰"}</div>${me.balance<0?'<div class="sm" style="text-align:center;color:var(--no)">رصيدك بالسالب: عليك دين للبنك</div>':""}</div>
+  <div class="glass"><h2>تحويل فلوس</h2>
+  <input id="tr-n" list="names" placeholder="اسم المستلم"><datalist id="names">${others}</datalist>
+  <input id="tr-a" type="number" inputmode="numeric" min="1" placeholder="المبلغ">
+  <button class="main" data-act="transfer">حوّل</button>${m}</div>
+  <div class="glass"><h2>عملياتي</h2>${txList(me.id)}</div>`;
+}
+function bankView(m){
+  const rows=S.accs.map(a=>`<div class="row" style="flex-direction:column;align-items:stretch">
+   <div style="display:flex;justify-content:space-between"><b>${esc(a.name)}</b><b ${a.balance<0?'style="color:var(--no)"':""}>${fmt(a.balance)}</b></div>
+   <div class="sm">${S.pins?(a.pin?"🔓 كلمة السر: <b>"+esc(a.pin)+"</b>":"من غير كلمة سر"):(a.pin?"🔒 محمي بكلمة سر (اكتبها قبل أي عملية)":"من غير كلمة سر")}</div>
+   ${a.pin?`<input id="p-${a.id}" type="password" placeholder="كلمة سر ${esc(a.name)}" autocomplete="off" style="margin:4px 0">`:""}
+   <div class="acts"><input id="v-${a.id}" type="number" placeholder="مبلغ" style="width:90px;margin:0">
+   <button data-act="add" data-id="${a.id}">➕ إضافة</button><button data-act="sub" data-id="${a.id}">➖ سحب</button>
+   <button data-act="set" data-id="${a.id}">= تحديد</button><button data-act="clr" data-id="${a.id}">🔑 مسح كلمة السر</button><button class="danger" data-act="del" data-id="${a.id}">حذف</button></div></div>`).join("");
+  return `<div class="glass"><div class="top"><b>🏦 ${ADMIN_NAME}</b><button data-act="logout">خروج</button></div>
+  <div class="sm">إجمالي الفلوس في البنك: <b>${fmt(S.accs.reduce((s,a)=>s+Number(a.balance||0),0))}</b> · الحسابات ${S.accs.length}/${MAX}</div></div>
+  <div class="glass"><h2>كلمات السر</h2>${S.pins?'<button data-act="hidepins">🙈 إخفاء كلمات السر</button>':'<input id="pinpw" type="password" placeholder="اكتب باسورد البنك" autocomplete="off"><button data-act="showpins">👁️ إظهار كلمات السر</button>'}</div>
+  <div class="glass"><h2>حساب جديد</h2>
+  <input id="n-name" placeholder="الاسم">
+  <input id="n-pin" placeholder="كلمة سر للحساب (اختياري)">
+  <input id="n-bal" type="number" placeholder="رصيد مبدئي (الافتراضي 10,000 جنيه)">
+  <button class="main" data-act="create">إنشاء الحساب</button>${m}</div>
+  <div class="glass"><h2>المحافظ</h2>${rows||'<div class="sm">مفيش حسابات لسه</div>'}</div>
+  <div class="glass"><h2>كل العمليات</h2>${txList(null)}</div>`;
+}
+async function logTx(from,to,amt,note){
+  const id="t"+Date.now().toString(36)+Math.random().toString(36).slice(2,5);
+  await db.collection("tx").doc(id).set({from:from.name,fromId:from.id,to:to.name,toId:to.id,amt,note:note||"",t:Date.now()});
+}
+const ADM={id:"admin",name:"البنك"};
+// ===== مرتب الخميس والجمعة: 3000 جنيه الساعة 11 (بتوقيت القاهرة) =====
+const PAY_AMT=3000,PAY_HOUR=11;
+let payBusy=false;
+function cairoNow(){
+  const p={};new Intl.DateTimeFormat("en-GB",{timeZone:"Africa/Cairo",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",hourCycle:"h23"}).formatToParts(new Date()).forEach(x=>p[x.type]=x.value);
+  return {y:+p.year,m:+p.month,d:+p.day,h:+p.hour};
+}
+async function claimPayout(key){
+  const ref=db.collection("settings").doc("payouts");
+  return db.runTransaction(async t=>{
+    const d=await t.get(ref),paid=(d.exists&&d.data().paid)||{};
+    if(paid[key])return false;
+    t.set(ref,{paid:{[key]:Date.now()}},{merge:true});
+    return true;
+  });
+}
+async function checkPayouts(){
+  if(payBusy||!db)return;payBusy=true;
+  try{
+    const n=cairoNow(),base=Date.UTC(n.y,n.m-1,n.d);
+    for(const k of [-1,0]){
+      const dd=new Date(base+k*864e5),wd=dd.getUTCDay();
+      if(wd!==4&&wd!==5)continue;
+      if(k===0&&n.h<PAY_HOUR)continue;
+      const key=dd.toISOString().slice(0,10);
+      if(!(await claimPayout(key)))continue;
+      const snap=await db.collection("accounts").get(),batch=db.batch(),now=Date.now();
+      const note=(wd===4?"مرتب الخميس":"مرتب الجمعة");
+      snap.docs.forEach((d,i)=>{
+        const bal=Number(d.data().balance||0),debt=bal<0?-bal:0;
+        const txt=debt?note+" — خصم دين "+fmt(debt)+" = صافي "+fmt(PAY_AMT-debt)+" من "+fmt(PAY_AMT):note;
+        batch.update(d.ref,{balance:firebase.firestore.FieldValue.increment(PAY_AMT)});
+        batch.set(db.collection("tx").doc("pay"+key+"_"+d.id),{from:ADM.name,fromId:ADM.id,to:d.data().name,toId:d.id,amt:PAY_AMT,note:txt,t:now+i});
+      });
+      await batch.commit();
+    }
+  }catch(e){console.error("payout:",e)}
+  payBusy=false;
+}
+let eventTarget=null;
+async function act(a,id){
+  try{
+    if(a==="login"){if(val("lg-acc")===BANK_ID){if(val("lg-pin").trim()!==ADMIN_PASS)return say("الباسورد غلط",false);S.admin=true;S.me=null;S.bank=true;save();S.msg="";return render()}const x=byId(val("lg-acc"));if(!x)return say("اختار اسمك",false);const p=val("lg-pin").trim();if(x.pin){if(x.pin!==p)return say("كلمة السر غلط",false)}else{if(p.length<3)return say("اكتب كلمة سر (3 حروف على الأقل)",false);if(p!==val("lg-pin2").trim())return say("كلمتين السر مش زي بعض",false);await db.collection("accounts").doc(x.id).update({pin:p})}S.me=x.id;S.admin=false;save();S.msg="";return render()}
+    if(a==="showpins"){if(val("pinpw")!==ADMIN_PASS)return say("باسورد البنك غلط",false);S.pins=true;S.msg="";return render()}
+    if(a==="hidepins"){S.pins=false;return render()}
+    if(a==="logout"){S.me=null;S.admin=false;S.bank=false;S.pins=false;save();S.msg="";return render()}
+    if(a==="create"){
+      const name=val("n-name").trim(),pin=val("n-pin").trim(),bal=val("n-bal").trim()===""?10000:Math.max(0,Math.floor(Number(val("n-bal"))||0));
+      if(!name)return say("اكتب الاسم",false);
+      if(S.accs.length>=MAX)return say("وصلنا للحد الأقصى 10 حسابات",false);
+      if(byName(name))return say("الاسم ده موجود بالفعل",false);
+      const id="a"+Date.now().toString(36);
+      await db.collection("accounts").doc(id).set({name,pin,balance:bal,t:Date.now()});
+      return say("تم إنشاء حساب "+name+" ✅");
+    }
+    const x=byId(id);
+    if(x){const need=x.pin;
+      if(need&&val("p-"+id).trim()!==need)return say("اكتب كلمة سر "+x.name+" الصح الأول",false)}
+    if(a==="clr"){await db.collection("accounts").doc(id).update({pin:""});return say("اتمسحت كلمة سر "+x.name+" ✅")}
+    if(a==="del"){if(!x||!confirm("تحذف حساب "+x.name+"؟"))return;await db.collection("accounts").doc(id).delete();return say("تم الحذف")}
+    if(a==="add"||a==="sub"||a==="set"){
+      const v=Math.floor(Number(val("v-"+id)));if(!(v>=0)||isNaN(v))return say("اكتب مبلغ صحيح",false);
+      let nb=a==="add"?x.balance+v:a==="sub"?Math.max(0,x.balance-v):v;
+      await db.collection("accounts").doc(id).update({balance:nb});
+      if(a==="add")await logTx(ADM,x,v,"إيداع من الأدمن");
+      if(a==="sub")await logTx(x,ADM,Math.max(0,Math.min(v,x.balance)),"سحب بواسطة الأدمن");
+      return say("تم تعديل رصيد "+x.name+" ✅");
+    }
+
+    if(a==="transfer"){
+      const me=byId(S.me),to=byName(val("tr-n")),amt=Math.floor(Number(val("tr-a")));
+      if(!to)return say("مفيش حساب بالاسم ده",false);
+      if(to.id===me.id)return say("مينفعش تحوّل لنفسك",false);
+      if(!(amt>0))return say("اكتب مبلغ صحيح",false);
+            const FV=firebase.firestore.FieldValue;const batch=db.batch();
+      batch.update(db.collection("accounts").doc(me.id),{balance:FV.increment(-amt)});
+      batch.update(db.collection("accounts").doc(to.id),{balance:FV.increment(amt)});
+      await batch.commit();
+      await logTx(me,to,amt,"");
+      return say("تم تحويل "+fmt(amt)+" جنيه إلى "+to.name+" ✅");
+    }
+  }catch(e){say("حصلت مشكلة: "+(e&&e.message||e),false)}
+}
+document.addEventListener("click",e=>{if(e.target.closest("#ttl")){taps++;clearTimeout(tapT);tapT=setTimeout(()=>taps=0,2000);if(taps>=5){taps=0;S.showAdmin=true;render()}}const b=e.target.closest("[data-act]");if(b){eventTarget=b;act(b.dataset.act,b.dataset.id)}});
+document.addEventListener("change",e=>{if(e.target.id==="lg-acc"){S.sel=e.target.value;S.msg="";render()}});
+window.addEventListener("hashchange",()=>{S.showAdmin=location.hash==="#admin";render()});
+document.addEventListener("focusout",()=>setTimeout(render,150));
+// ===== Firebase / Firestore =====
+// حط هنا إعدادات مشروعك (Project settings > Your apps > Web app > firebaseConfig)
+let firebaseConfig={
+  apiKey:"AIzaSyBw2BXQ0bubipE0PnTbHBa128zBV8EJPpc",
+  authDomain:"bank-teta.firebaseapp.com",
+  projectId:"bank-teta",
+  storageBucket:"bank-teta.firebasestorage.app",
+  messagingSenderId:"185129169349",
+  appId:"1:185129169349:web:192fa3c7ba7fbd09ba5bac"
+};
+try{const c=JSON.parse(localStorage.getItem("fb_cfg")||"null");if(c)firebaseConfig=c}catch(e){}
+function setupForm(){
+  $("#app").innerHTML='<div class="glass"><h2>إعداد أول مرة</h2><div class="sm">اكتب اسم مشروع Firebase (Project ID). ده بس.</div><input id="s-pid" placeholder="Project ID" autocapitalize="off" autocorrect="off" spellcheck="false"><div class="sm">مفتاح apiKey (اختياري، لو الأول مشتغلش ضيفه)</div><input id="s-key" placeholder="AIza..." autocapitalize="off" autocorrect="off" spellcheck="false"><button class="main" id="s-go">حفظ وتشغيل</button></div>';
+  $("#s-go").onclick=()=>{
+    const pid=$("#s-pid").value.trim(),key=$("#s-key").value.trim();
+    if(!pid)return;
+    localStorage.setItem("fb_cfg",JSON.stringify({projectId:pid,apiKey:key||"x",authDomain:pid+".firebaseapp.com"}));
+    location.reload();
+  };
+}
+const showFatal=m=>{$("#app").innerHTML='<div class="glass msg" style="color:var(--no)">'+esc(m)+'<br><br><button id="s-reset">إعادة الإعداد</button></div>';const r=$("#s-reset");if(r)r.onclick=()=>{localStorage.removeItem("fb_cfg");location.reload()}};
+const FAMILY=["Hamza","Omar","Farah","Malak","Rana","Ahmed"];
+(async()=>{
+  try{
+    if(typeof firebase==="undefined")throw new Error("مكتبة Firebase ماتحملتش. اتأكد من النت أو من إن الملف متفتحش بحاجة بتحجب gstatic.com");
+    if(!firebaseConfig){setupForm();return}
+    firebase.initializeApp(firebaseConfig);
+    db=firebase.firestore();
+    let seeded=false;
+    db.collection("accounts").onSnapshot(snap=>{
+      if(snap.empty&&!seeded){
+        seeded=true;
+        FAMILY.forEach((name,i)=>db.collection("accounts").doc("family_"+name.toLowerCase()).set({name,pin:"",balance:0,t:Date.now()+i}).catch(e=>showFatal("مش قادر أكتب في Firestore: "+e.message)));
+      }
+      S.accs=snap.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(a.t||0)-(b.t||0));
+      S.ready=true;render();
+      if(!window._payStarted){window._payStarted=true;checkPayouts();setInterval(checkPayouts,60000)}
+    },e=>showFatal("خطأ في تحميل الحسابات: "+e.message+" — غالباً قواعد Firestore (Rules) بتمنع القراءة"));
+    db.collection("tx").onSnapshot(snap=>{
+      S.tx=snap.docs.map(d=>d.data()).sort((a,b)=>b.t-a.t);render();
+    },e=>console.error("tx:",e));
+  }catch(e){showFatal("تعذر تشغيل البنك: "+(e&&e.message||e));}
+})();
+</script>
+</body>
+</html>
